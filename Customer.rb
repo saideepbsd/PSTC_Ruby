@@ -17,7 +17,7 @@ class Customer
 	
 	def deposit(amount)
 		if amount > 0
-	    	@balance += amount
+	    		@balance += amount
 			puts "Your new balance : #{@balance}"
 		else
 			puts "Enter valid amount"	
@@ -26,9 +26,9 @@ class Customer
 
 	def withdraw(amount)
 		if amount <= 0
-            puts "Enter valid amount"
+        		puts "Enter valid amount"
 		elsif amount <= @balance
-	    	@balance -= amount
+	    		@balance -= amount
 			puts "Your new balance : #{@balance}"
 		else
 			puts "You have insufficient balance"	
