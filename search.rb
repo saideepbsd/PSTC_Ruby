@@ -11,11 +11,11 @@ class String
 
 	def search_n_highlight(word)
 
-		count = 0  					# Initialize occurence count
+		count = 0  			        # Initialize occurence count
 
 		gsub!(/#{word}/i) do |match|
 		    count += 1
-			"(#{match})"  			# Highlight the occurence
+		    "(#{match})"  			# Highlight the occurence
 		end	
 			
 
