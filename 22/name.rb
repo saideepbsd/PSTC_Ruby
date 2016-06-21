@@ -25,4 +25,4 @@ puts "Enter lastname"
 lastname = gets.chomp
 
 dude = Name.new(firstname, lastname)
-dude.hello	
+dude.hello

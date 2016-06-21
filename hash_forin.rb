@@ -22,7 +22,7 @@ class Array
 
 		end
 
-	return d
+		d
 		
 	end
 

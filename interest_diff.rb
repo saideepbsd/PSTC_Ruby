@@ -29,4 +29,4 @@ if p && t
 	puts "Difference is : #{interest.interest_diff}"
 else
 	puts "Enter valid input"
-end	
+end

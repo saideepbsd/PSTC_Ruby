@@ -21,7 +21,7 @@ def sum_of_times(*time_array)
 	end
 
     days = (sum_secs / 86400).to_i
-
+    
 	sum_time = ""
 
     sum_time += "#{days} day & " if days > 0

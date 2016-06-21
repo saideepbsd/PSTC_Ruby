@@ -14,7 +14,6 @@ def alphabet_count(mystring)
 
 	d.each { |key, value| puts "#{key} : #{value}" }
 	
-
 end
 
 # Prompt for user input
