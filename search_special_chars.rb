@@ -7,20 +7,16 @@
 # Special character "," is at position 22
 # Special character "/" is at position 23
 # Special character "]" is at position 24
-
 class String
 
 	def search_special_chars
 
 		index = 0
-		regex = /[^0-9a-z]/i  # Non alphanumeric pattern
-		self.each_char do |c| # Scan each character in the string 
-			if regex.match(c) 
-				puts "Special character \"#{c}\" is at position #{index}"
-			end
+		regex = /[^0-9a-z]/i  			# Non alphanumeric pattern
+		self.each_char do |c| 			# Scan each character in the string to find match 			
+			puts "Special character \"#{c}\" is at position #{index}" if regex.match(c)
 			index +=1
 		end	
-
 	end
 end
 
@@ -29,4 +25,3 @@ puts "Please enter some text"
 input = gets.chomp
 
 input.search_special_chars
-

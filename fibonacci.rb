@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-
 # Fibonacci series upto 1000 using 'yield'.
 def fibonacci(n)   
     
@@ -13,4 +12,5 @@ def fibonacci(n)
 
 end
 
-fibonacci(1000) {|i| puts i} # Print fibonacci series upto 1000. 
+# Print fibonacci series upto 1000.
+fibonacci(1000) {|i| puts i}

@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-#Checks whether the input string is a palindrome
+# Checks whether the input string is a palindrome
 def is_palindrome?(mystring)
   mystring = mystring.downcase 	
   mystring == mystring.reverse 

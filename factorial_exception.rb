@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby
 
-# Calculate factorial of a number using ranges
+# Add exception handling for negative numbers in factorial program.
+
 def factorial(n)	
+	raise "Negative numbers not entertained.." if n < 0
 	(1..n).inject(1){ |product, i| product * i }
 end
 

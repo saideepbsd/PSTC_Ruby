@@ -1,23 +1,25 @@
 #!/usr/bin/env ruby
 
-#Counts the occurrences of various letters of the alphabet in an input string 
-#and stores it in hash.
+# Counts the occurrences of various letters of the alphabet in an input string 
+#   and stores it in hash.
 def alphabet_count(mystring)
 	
-	mystring = mystring.gsub(/[^a-z]/i,"").downcase # Remove non alphabet from the string and convert to lowercase
+	# Remove non alphabet from the string and convert to lowercase
+	mystring = mystring.gsub(/[^a-z]/i,"").downcase
 
 	d = Hash.new(0) 
 
-	mystring.each_char { |c| d[c] = mystring.count(c) } # Store the count in hash
+	# Scan through each character & store the count in hash
+	mystring.each_char { |c| d[c] = mystring.count(c) } 
 
-	d.each do |key, value|
-  		puts "#{key} : #{value}"
-	end
+	d.each { |key, value| puts "#{key} : #{value}" }
+	
 
 end
 
-puts "Enter a string" # Prompt for user input
+# Prompt for user input
+puts "Enter a string"
+ 
 mystring = gets.chomp 
 
 alphabet_count(mystring)
-		

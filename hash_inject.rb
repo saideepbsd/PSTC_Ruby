@@ -1,10 +1,9 @@
 #!/usr/bin/env ruby
 
-require_relative "hash_forin"
-
 # Write a method that groups the above hash into 2 groups of 'even' and 'odd' length using 'inject'.
 # Eg: ['abc','def',1234,234,'abcd','x','mnop',5,'zZzZ'] ­> {odd: [["x", 5],
 #   ["abc", "def", 234]], even: [[1234, "abcd", "mnop", "zZzZ"]]}
+require_relative "hash_forin" # group_by_length function in hash_forin.rb is used in this program
 
 class Array
 
@@ -21,8 +20,7 @@ class Array
 			end
 			
 			x
-		end
-		
+		end		
 
 	end
 
@@ -33,4 +31,4 @@ array = ['abc', 'def', 1234, 234, 'abcd', 'x', 'mnop', 5, 'zZzZ']
 
 puts "Grouping into odd, even...."
 
-puts array.group_by_odd_even
+puts array.group_by_odd_even # => {:odd=>[["abc", "def", 234], ["x", 5]], :even=>[[1234, "abcd", "mnop", "zZzZ"]]}

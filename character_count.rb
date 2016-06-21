@@ -11,7 +11,7 @@ class String
 		uppercase = Range.new('A','Z')
 		digit = Range.new('0','9')
 
-		hash = Hash.new(0) # Hash to store count of each type
+		hash = Hash.new(0) 				# Hash to store count of each type
 
 		self.each_char do |c|
 			case c

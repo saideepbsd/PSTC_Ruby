@@ -1,10 +1,8 @@
-
+#!/usr/bin/env ruby
 
 # Define a Customer having three variables "name","account_no" & "balance". 
 # It must initialise the class object with the name of the customer, auto­increment the account no and set balance to 1000. 
 # Define methods deposit() and withdraw() for this class.
-
-
 class Customer
 	@@account_no = 0
 
@@ -18,7 +16,7 @@ class Customer
 	def deposit(amount)
 		if amount > 0
 	    	@balance += amount
-			puts "Your new balance : #{@balance}"
+			puts "Your updated balance : #{@balance}"
 		else
 			puts "Enter valid amount"	
 		end	
@@ -29,7 +27,7 @@ class Customer
         	puts "Enter valid amount"
 		elsif amount <= @balance
 	    	@balance -= amount
-			puts "Your new balance : #{@balance}"
+			puts "Your updated balance : #{@balance}"
 		else
 			puts "You have insufficient balance"	
 		end			
@@ -37,8 +35,7 @@ class Customer
 
 end
 
-
-
-
-
-
+# Example 
+Sai = Customer.new("Sai Deep")
+Sai.deposit(500)  # => Your new balance : 1500
+Sai.withdraw(500) # => Your new balance : 1000

@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 # Print Pascal's triangle using 'yield'.
-
 def pascal(n)
 
 	(0..n).each do |r|
@@ -21,6 +20,6 @@ end
 n = 10
 
 # print nCk
-pascal(n) do |row, column|
-  printf("%d ", factorial(row) / (factorial(column) * factorial(row - column)))
-end	
+pascal(n) do |r, c|
+  printf("%d ", factorial(r) / (factorial(c) * factorial(r - c)))
+end
