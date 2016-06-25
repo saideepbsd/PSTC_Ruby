@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
-require_relative '../lib/alphabet_count.rb'
+require_relative '../lib/string.rb'
 
 puts "Enter a string" # Prompt for user input
-mystring = gets.chomp 
+mystring = gets.chomp
 
-hash = mystring.alphabet_count
+hash = mystring.count_alphabets
 hash.each { |key, value| puts "#{key} : #{value}" }
