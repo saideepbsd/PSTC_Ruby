@@ -5,14 +5,14 @@ class Fibonacci
 	 
   def fibonacci_series(max) 
 
-    a, b = 1, 1 # Parallel assignment
+    a, b = 1, 1 
 
     while a <= max 
       yield a
-	    a, b = b, a + b
-	  end
+      a, b = b, a + b
+    end
 
-	end
+  end
 
 end
 
