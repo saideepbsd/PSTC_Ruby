@@ -16,7 +16,7 @@ class Customer
 	
 	def deposit(amount)
 		if amount > 0
-	    @balance += amount
+	  @balance += amount
 			puts 'Balance updated'
 			@balance
 		else
