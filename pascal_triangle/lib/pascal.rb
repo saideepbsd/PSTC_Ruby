@@ -9,7 +9,7 @@ class Pascal
 			(0..r).each do |c|
 				yield r,c
 			end
-		print("\n")	
+			print("\n")	
 		end
 
 	end
