@@ -37,7 +37,7 @@ class Customer
 	end
 	
 	def to_s
-	  puts "Name : #{@name}\tAccount no : #{@account_no}\tBalance : #{@balance}"
+		puts "Name : #{@name}\tAccount no : #{@account_no}\tBalance : #{@balance}"
 	end
 
 end
