@@ -22,12 +22,12 @@ class Time
 			end			 	
 		end
 
-		  days = (total_seconds / 86400).to_i
+		days = (total_seconds / 86400).to_i
 		  
-		  sum = ''
-		  sum += "#{days} day & " if days > 0		  
-		  sum += Time.at(total_seconds).utc.strftime("%H:%M:%S")
-		  sum
+    sum = ''
+		sum += "#{days} day & " if days > 0		  
+		sum += Time.at(total_seconds).utc.strftime("%H:%M:%S")
+		sum
 
 	end
 	
